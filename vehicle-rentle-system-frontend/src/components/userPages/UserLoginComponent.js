@@ -15,21 +15,7 @@ function UserLoginComponent() {
     const [userPassword, setPassword] = useState("");
     const navigate = useNavigate('');
    
-    //ReactSession.set("vehicleChassisNumber", userEmail);
     localStorage.setItem("vehicleChassisNumber", userEmail);
-
-    // componentWillUnmount=() =>{
-    //     this.handleValidation();
-    //   }
-    // handleValidation = () => {
-    //     if (this.invalidForm()) {
-    //       this.setState({ showValidation: true });
-    //       this.preventNavigation();
-    //     }
-    //   };
-    // preventNavigation = () => {
-    //     window.location.reload();
-    //   }
     
    function handleErrors()
     {
@@ -45,7 +31,6 @@ function UserLoginComponent() {
     }
 
     function handleClick() {
-        //handleErrors();
        
         var formData = JSON.stringify({ userEmail, userPassword });
         // Send data to the backend via POST
