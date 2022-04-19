@@ -24,6 +24,7 @@ function OwnerRegister() {
 }
 
 function uploadFile() {
+    // using form-data to send the data insted of json object
 let formData = new FormData(); 
 formData.append('ownerAdhaar', ownerAdhaarDetails);
 formData.append('ownerFirstName', ownerFirstName);   //append the values with key, value pair
@@ -38,8 +39,6 @@ axios.post('http://localhost:9090/ownerRegistration', formData, {
         }
   }).then(navigate("/OwnerLogin"));
 }
-
-    //----------------
 
 
 
