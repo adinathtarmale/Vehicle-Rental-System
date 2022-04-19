@@ -25,7 +25,6 @@ export default function OwnerRequest() {
         propertyName = item.ownerid;
     })
     localStorage.setItem("ownerIdentity", propertyName);
-    //localStorage.setItem("ownerEmail", ownerEmail);
     
     // getting ownerID
     useEffect(() => {
@@ -138,20 +137,7 @@ export default function OwnerRequest() {
                                 />
                             </div>
                         </div>
-                        {/* <div className="mb-3 col-md-2 position-relative">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <label for="validationTooltip02" id='userdetails'>Upload Image</label>
-                                </div>
-                                <div class="form-control">
-                                    <input type="file" class="form-control"
-                                    accept='image/*'
-                                        name="vehicleImage"
-                                        onChange={handleImageFile}
-                                    />
-                                </div>
-                            </div>
-                        </div> */}
+                        
                             <div className="col-5">
                                
                                 <label for="validationTooltip02" id='userdetails'>Upload Vehicle Image</label>
@@ -179,9 +165,7 @@ export default function OwnerRequest() {
                             <button id="sub_btn" onClick={uploadFile} type="submit">Submit Request</button>
                         </div>
                     </form >
-                    {/* <footer>
-                        <br />
-                    </footer> */}
+
                 </div>
             </div></body>
     );
