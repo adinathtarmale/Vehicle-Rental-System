@@ -11,8 +11,6 @@ export default function UserBookVehiclesList() {
     const navigate = useNavigate('');
     const [bookingId, setBookingId] = useState("");
     
-   
-
 
     useEffect(() => {
         // POST request using fetch inside useEffect React hook
@@ -42,8 +40,6 @@ export default function UserBookVehiclesList() {
     }
     console.log()
 
-
-    // Buttons----------------------------
         // to payment page
         function toPaymentClick() {
             var data = JSON.stringify({ bookingId });
@@ -82,9 +78,6 @@ export default function UserBookVehiclesList() {
             navigate("/UserBookRequest")
         }
     
-  
-
-
  
     return (
     <body className="mx-auto mt-0 pt-0 m-blank p-auto" style={{ backgroundColor: '#1A374D' }}>
@@ -189,9 +182,7 @@ export default function UserBookVehiclesList() {
                             <button class=" btn btn-warning btn-md pull-right "  onClick={bookAgainClick}>  &nbsp;&nbsp;&nbsp;Book Again</button>
                     </div>
         </div>
-        {/* <div class="nav navbar-right mx-auto ">
-                    <button class="btn btn-primary btn-sm " onClick={getAllBookings}>click</button>
-                </div> */}
+        
     </div>
     <br /><br /><br /><br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br /><br /><br /><br />
