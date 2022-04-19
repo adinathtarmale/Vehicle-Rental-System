@@ -10,7 +10,6 @@ function UserBookRequest() {
     const [userAllVehicles, setAllVehicles] = useState([]);
     const [vehicleReqestId, setvehicleReqestId] = useState('');
 
-    //const vehicleChassisNumber = ReactSession.get("vehicleChassisNumber");
     const vehicleChassisNumber = localStorage.getItem("vehicleChassisNumber");
     const navigate = useNavigate('');
 
@@ -23,12 +22,6 @@ function UserBookRequest() {
             alert(err);
         });
     }, []);
-
-    console.log("testing link: "+JSON.stringify(userAllVehicles))
-    //console.log("Test"+vehicleChassisNumber)
-
-    console.log("testing link: "+userAllVehicles);
-    //console.log("testing link: "+{userAllVehicles});
 
 
     function mybookingsClick() {
