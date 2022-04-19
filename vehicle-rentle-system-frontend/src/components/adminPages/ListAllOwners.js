@@ -110,27 +110,6 @@ function back() {
                         </tbody>
                         
                     </table>
-                    
-                                {/* <div class="pull-left">             // SELECTING ALL VEHICLES OF SEPECIFIED OWNER NOT DONE!!!
-                                    <td>
-                                    <div class="w-50">
-                                     <input
-                                        style={{ border: '1px rgb(32, 31, 31)' }} type="text"
-                                        
-                                        name="ownerId"
-                                        value={ownerId}
-                                        onChange={(e) => {
-                                            setUpdateOwnerId(e)
-                                        }}
-
-                                        placeholder="Owner ID"
-                                        ></input>
-                                        <button onClick={(e)=>sendOwnerIdHandleClick(e)}  type="submit">Search</button>
-                                        
-                                        
-                                        </div>
-                                     </td>
-                                </div> */}
                                 
                 </div>
                 <div class="pull-right">
