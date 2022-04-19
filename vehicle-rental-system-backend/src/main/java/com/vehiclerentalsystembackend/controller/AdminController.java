@@ -115,11 +115,4 @@ public class AdminController {
 		 return ResponseEntity.ok(adminService.showAllBooking());
 	 }
 	 
-	 
-	 
-	// (PENDING)-----------------------------------------
-	 // security
-	 // optional --> if deleted owner then all of its vehicles should also be deleted
-	 // (PENDING)-------------------------------------------
-	 
 }
