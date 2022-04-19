@@ -16,9 +16,6 @@ function OwnerRegister() {
     const [ownerEmail, setEmail] = useState('');
     const navigate = useNavigate('');
 
-    //-----------------
-  //user registration form
-
   const handleImageFile = (event) =>{
     setAdhaarNo(event.target.files[0]);
 }
