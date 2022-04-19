@@ -96,65 +96,6 @@ function UserBook() {
                         </tbody>
                     </table>
 
-                    {/* <div class="pull-left">
-                        <tr>
-                            <td >
-                                <h3><span class="pull-left badge badge-light ">Enter Owner-Id to set your vehicle for rent</span></h3>
-
-                                <div class="w-25">
-                                    <input
-                                        style={{ border: '1px rgb(32, 31, 31)' }} type="text"
-                                        name="ownerid"
-                                        value={ownerid}
-                                        onChange={(event) => {
-                                            setOwnerId(event.target.value);
-                                        }}
-                                        placeholder='Owner ID' required
-
-                                    >
-                                    </input>
-                                   
-                                    <button onClick={ownerAddVehicle} type="submit" class="btn btn-primary btn-sm">Add Vehicle</button>
-                                    <div class="pull-left">
-                                    <p class="text-white" >
-                                    <span STYLE="font-size:70%"></span></p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </div> */}
-
-
-                    {/* <div class="pull-right">
-                        <tr>
-                                    
-                            <td >
-                            <h3><span class="pull-right badge badge-light  ">Enter Owner-ID to search all bookings</span></h3>
-
-                                <div class="w-25 pull-right">
-                                    <input
-                                        style={{ border: '1px rgb(32, 31, 31)' }} type="text"
-                                        name="ownerid"
-                                        value={ownerid}
-                                        onChange={(event) => {
-                                            setOwnerId(event.target.value);
-                                        }}
-                                        placeholder='Owner ID' required
-
-                                    >
-                                    </input>
-                                   
-                                    <button onClick={ownerSearchVehicle} type="submit" class="btn btn-primary btn-sm">Search</button>
-                                    <div class="pull-right">
-                                    <p class="text-white" >
-                                    <span STYLE="font-size:70%"></span></p>
-                                    </div>
-                                </div>
-                               
-                            </td>
-                          
-                        </tr>
-                    </div> */}
                 </div>
                 <div class="pull-right">
                     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
