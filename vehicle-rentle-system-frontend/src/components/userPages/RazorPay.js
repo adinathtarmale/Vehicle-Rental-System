@@ -21,7 +21,7 @@ class RazorPay extends React.Component {
   }
 
   componentDidMount() {
-                            // <p><Link to="/"><b>Back to Homepage</b></Link>.</p>
+                        
     const script = document.createElement("script");
     script.src = "https://checkout.razorpay.com/v1/checkout.js";
     script.async = true;
@@ -39,7 +39,7 @@ class RazorPay extends React.Component {
     var amount = amt * 100; //Razorpay consider the amount in paise
     //var amount = 100000; //Razorpay consider the amount in paise
     var options = {
-      "key": "rzp_test_pKIfVbWssiMvY1",
+      "key": "yor razor pay key",
       "amount": 0, // 2000 paise = INR 20, amount in paisa
       "name": "Vehicle Rental System",
       "description": "Test Transaction",
@@ -64,12 +64,12 @@ class RazorPay extends React.Component {
           .catch(e => console.log(e))
       },
       "prefill": {
-        "name": 'Adinath Tarmale',
-        "email": 'adinathtarmale43@gmail.com',
-        "contact": '7507558624',
+        "name": 'A T',
+        "email": 'yourmail@email.com',
+        "contact": '91278',
       },
       "notes": {
-        "address": "Aurangabad, Maharashtra, India."
+        "address": "India"
       },
       "theme": {
         "color": "#528ff0"
