@@ -25,14 +25,19 @@ public class UserRentEntity {
 	private String paymentId;
 	
 	@Column(length = 30)
+	//@NotBlank(message = "Travel Distance is mandatory")
 	private String  travelDistance;
 	
 	@Column(length = 30)
+	//@NotBlank(message = "Drivers Licence is mandatory")
 	private String  driversLicence;
 	
 	@DateTimeFormat(pattern = "yyyy-mm-dd")
+	//@NotNull
 	private LocalDate  bookingDate;
 
+	//@NotNull
+	//@Size(min = 2, message = "Paid-Amount must not be empty")
 	private double amountPaid;
 
 	public String getPaymentId() {

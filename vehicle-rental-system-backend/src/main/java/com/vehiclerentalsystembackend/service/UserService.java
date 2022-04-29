@@ -24,6 +24,13 @@ public class UserService {
 	@Autowired
 	BookingRepository bookingRepo;
 
+	// insert user (user Register)
+//	public UserEntity newUserRegistration(UserEntity usrEntity) {
+//
+//		UserEntity usrRegistered = userRepo.save(usrEntity);
+//		return usrRegistered;
+//	}
+
 	public void newUserRegistration(byte[] userAdhaarDetails, String userFirstName, String userLastName, String userPassword,
 			String userEmail, String userMobile) {
 		

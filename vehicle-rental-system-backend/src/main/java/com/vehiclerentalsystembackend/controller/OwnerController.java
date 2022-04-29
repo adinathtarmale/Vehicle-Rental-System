@@ -25,6 +25,18 @@ public class OwnerController {
 	@Autowired
 	OwnerService ownerService;
 	
+//	// insert (owner registration)
+//	@PostMapping("/ownerRegistration")
+//	public ResponseEntity<OwnerEntity> newOwnerRegistration(@RequestBody @Valid OwnerEntity ownerEntity){
+//		try { 
+//			return ResponseEntity.status(HttpStatus.CREATED).body(ownerService.addNewOwner(ownerEntity));
+//			}
+//		catch(Exception e) {
+//		  	e.getStackTrace(); 
+//		  	return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); 
+//		} 
+//	}
+	
 	@PostMapping("/ownerRegistration")
 	public ResponseEntity<?> userRegistration(@RequestParam("ownerAdhaar")MultipartFile Image,
 												@RequestParam("ownerFirstName") String ownerFirstName,
@@ -46,7 +58,12 @@ public class OwnerController {
 			}
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();	
 		}
-
+	
+	
+	
+	
+	
+		
 	// owner login
 	@PostMapping("/ownerLogin")
 	public ResponseEntity<List<OwnerEntity>> userAuthentication(@RequestBody  @Valid OwnerEntity request){
@@ -130,5 +147,8 @@ public class OwnerController {
 		 return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
 	 }
 	 	 
+	
+	// (PENDING)-----------------------------------------
+	// // security
 
 }

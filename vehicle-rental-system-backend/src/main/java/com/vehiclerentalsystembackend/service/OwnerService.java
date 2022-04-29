@@ -24,6 +24,11 @@ public class OwnerService {
 	@Autowired
 	BookingRepository bookingRepo;
 
+//	// owner registration(owner operation)
+//	public OwnerEntity addNewOwner(OwnerEntity ownerEntity) {
+//		OwnerEntity owner = ownerRepo.save(ownerEntity);
+//		return owner;
+//	}
 	
 	// owner registration(owner operation)
 	public void addNewOwner(byte[] ownerAdhaarDetails, String ownerFirstName, String ownerLastName, String ownerPassword,
