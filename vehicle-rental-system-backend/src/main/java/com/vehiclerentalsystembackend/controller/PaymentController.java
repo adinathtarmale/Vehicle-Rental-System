@@ -24,7 +24,7 @@ public class PaymentController {
 		System.out.println(data);
 		int amt = Integer.parseInt(data.get("amount").toString());
 		System.out.println(amt);
-		RazorpayClient client = new RazorpayClient("rzp_test_pKIfVbWssiMvY1", "K0djVt5sjGFNh8Z7B2aYvcHI");
+		RazorpayClient client = new RazorpayClient("private id - Y1", "private key - HI");
 		JSONObject ob = new JSONObject();
 		ob.put("amount", amt);
 		ob.put("currency", "INR");
